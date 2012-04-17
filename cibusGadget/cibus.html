@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=Unicode" />
+        <title>Hello World</title>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="cibus.js"></script>
+		<style type="text/css">
+        body
+        {
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            font-family: verdana;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #gadgetContent2
+        {
+            margin-top: 40px;
+            width: 100px;
+            vertical-align: middle;
+            text-align: center;
+            overflow: hidden;
+        }
+        </style>
+    </head>
+	
+    <body onload="init()">
+        <g:background id="imgBackground" src="images/white.png" 
+		style="position:absolute;top:0;left:0;" opacity="0">
+             <div id="gadgetContent2">Hello World!</div>
+			 <img src="images/help.png" alt="Show/Hide Graph" onclick="showFlyout()" />
+			 <img src="images/refresh.png" alt="reload" onclick="reloadBalance()" />
+			 <img src="images/web.png" alt="Go to site" onclick="navCibus()" />
+        </g:background>
+		<div id="holdingdata" style="visibility: hidden; height: 0; width: 0; display: none;"></div>		
+    </body>
+</html>
